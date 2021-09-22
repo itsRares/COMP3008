@@ -1,0 +1,383 @@
+﻿body {
+    background-color: #bdd2fb;
+}
+
+.image_all {
+    position: absolute;
+}
+
+.image_top {
+    top: 0;
+    left: 0;
+}
+
+.image_left {
+    top: 60%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.image_right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image_human {
+    right: 10px;
+    width: 72px;
+}
+
+.image_witch {
+    width: 72px;
+    left: 10px;
+}
+
+.image_dragonborn {
+    width: 58px;
+    top: 33%;
+    left: 10px;
+}
+
+.image_elf {
+    top: 70%;
+    width: 43px;
+    left: 40px;
+}
+
+.fa-check {
+    color: green;
+}
+
+.truemarble_wrap {
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+
+.truemarble_title,
+p,
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.truemarble_title h1 {
+    color: #606060;
+    margin-bottom: 0;
+}
+
+.truemarble_title p {
+    margin-top: 0;
+    color: #fff;
+    font-style: italic;
+    font-size: 11px;
+    font-weight: 900;
+}
+
+.dndbuilder_button button {
+    width: -webkit-fit-content;
+    margin: 0 10px;
+    height: 30px;
+    position: relative;
+    top: 50%;
+    color: #ffffff;
+    font-size: 13px;
+    border: 2px solid #696969;
+    background-color: #808080;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.dndbuilder_button button:active {
+    background-color: #a5a5a5;
+}
+
+.dndbuilder_table_wrap {
+    height: 425px;
+    width: 500px;
+    margin: 20px auto;
+    background: #fff;
+    border: 2px #696969 solid;
+}
+
+.newcharacter_button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*---------- CHARACTER LIST ----------*/
+
+.character_list {
+    height: 400px;
+    overflow: overlay;
+}
+
+.character_wrap {
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 10px;
+    display: flex;
+}
+
+.character_wrap:hover {
+    transform: scale(1.008);
+}
+
+.character_left {
+    display: inline-flex;
+    width: 83%;
+    cursor: pointer;
+}
+
+.character_left a {
+    width: 100%;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.character_right {
+    display: inline-flex;
+    width: 17%;
+    padding-top: 4px;
+}
+
+.character_level {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ccc;
+    margin: 10px 8px 10px 10px;
+    border-radius: 5px;
+}
+
+.character_level p {
+    margin: 7px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.character_name_wrap {
+    display: inline-flex;
+}
+
+.character_name {
+    font-size: 22px;
+    margin-top: 12px;
+    margin-right: 7px;
+    color: #3a3a3a;
+}
+
+.character_race {
+    font-size: 12px;
+    margin-top: 18px;
+    color: #545454;
+}
+
+.dndbuilder_option {
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dndbuilder_option:hover {
+    transform:scale(1.1);
+}
+
+.character_edit {
+    color: #ebb982;
+}
+
+.character_download {
+    color: #5a605a;
+}
+
+.character_delete {
+    color: #ee5e55;
+}
+
+/*---------- CHARACTER ADD ----------*/
+
+.newcharacter_title {
+    font-size: 25px;
+    text-align: left;
+    margin: 20px 0 -5px 35px;
+    color: #4d4d4d;
+}
+
+.dndbuilder_input {
+    width: 250px;
+    height: 10px;
+    border: #ccc 1px solid;
+    padding: 7px;
+    font-size: 11px;
+    color: #444;
+    border-radius: 3px;
+    outline: none;
+}
+
+.nameage_div {
+    display: inline-flex;
+    margin: 10px 20px 0;
+}
+
+.input_wrap {
+    margin: 14px 15px;
+}
+
+.input_title {
+    font-size: 13px;
+    color: #171616;
+    margin: 0 3px 1px;
+    font-weight: 100;
+    text-align: left;
+}
+
+.input_name {
+    width: 240px;
+}
+
+.input_age {
+    width: 120px;
+}
+
+.bio_div {
+    display: flex;
+    margin-top: -15px;
+}
+
+.input_bio {
+    height: 70px;
+    width: 270px;
+    min-height: 70px;
+    max-height: 70px;
+    max-width: 270px;
+    min-width: 270px;
+}
+
+.input_gender,
+.input_level {
+    width: 90px;
+}
+
+.input_race,
+.input_class {
+    height: 25px;
+    width: 200px;
+}
+
+.abilities_div {
+    margin-top: -15px;
+    margin-bottom: 7px;
+}
+
+.ability_score_title {
+    margin-left: 35px;
+    margin-top: 5px;
+}
+
+.abilities_div .input_wrap {
+    margin: 10px;
+}
+
+.abilities_div .input_wrap .dndbuilder_input {
+    width: 40px;
+    text-align: center;
+}
+
+.abilities_div .input_wrap .input_title {
+    font-size: 9px;
+    text-align: center;
+}
+
+.newcharacter_submit {
+    text-align: right;
+    margin-right: 25px;
+}
+
+.newcharacter_submit a button {
+    background: #1994CA;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*---------- CHARACTER VIEW ----------*/
+
+.character_search_div {
+    display: flex;
+}
+
+.character_search_wrap {
+    display: -webkit-box;
+    margin: 20px;
+}
+
+.character_search_wrap input {
+    width: 150px;
+    margin-top: 3px;
+}
+
+.character_search_div div button {
+    background-color: #5ea6de;
+}
+
+.character_info {
+    margin: 15px 30px 20px;
+}
+
+.character_info_p {
+    text-align: left;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.character_info_p span,
+.character_biography {
+    font-size: 13px;
+    color: #333;
+}
+
+.character_biography {
+    text-align: left;
+    margin: 5px;
+}
+
+.right_seperate {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid;
+}
+
+.character_num_stats {
+    display: flex;
+}
+
+.character_delete {
+    text-align: right;
+    margin-top: -25px;
+    margin-right: 25px;
+}
+
+.character_delete button {
+    background-color: #f5524c;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+    .truemarble_error {
+        font-size: 13px;
+        color: rgb(225, 64, 48);
+        width: 150px;
+        margin: 0 auto;
+        position: relative;
+        top: 20px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }

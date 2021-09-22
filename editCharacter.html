@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../Resources/DndBuilder.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Edit Character</title>
+</head>
+<body>
+    <div>
+        <img class="image_all image_top" src="../Resources/upper_left.png">
+        <img class="image_all image_top image_witch" src="../Resources/witch.png">
+        <img class="image_all image_left" src="../Resources/mid_left.png">
+        <img class="image_all image_left image_dragonborn" src="../Resources/dragonborn.png">
+        <img class="image_all image_left image_elf" src="../Resources/elf.png">
+        <img class="image_all image_right" src="../Resources/mid_right.png">
+        <img class="image_all image_right image_human" src="../Resources/human.png">
+    </div>
+    <div class="truemarble_wrap">
+        <div class="truemarble_title">
+            <h1>DnD Builder</h1>
+            <p>Make the best character!</p>
+        </div>
+        <div class="dndbuilder_button newcharacter_button"><a href="/"><button class="">Back <i class="fas fa-arrow-left"></i></button></a></div>
+        <div class="dndbuilder_table_wrap">
+            <h1 class="newcharacter_title">Edit character</h1>
+
+            <!--NAME AND AGE-->
+            <div class="nameage_div">
+                <div class="input_wrap">
+                    <h1 class="input_title">Name (Can't change):</h1>
+                    <input type="text" class="dndbuilder_input input_name" placeholder="Enter a name" readonly>
+                </div>
+                <div class="input_wrap">
+                    <h1 class="input_title">Age*:</h1>
+                    <input type="text" class="dndbuilder_input input_age" placeholder="Enter age">
+                </div>
+            </div>
+
+            <!--BIO/GENDER/LEVEL-->
+            <div class="nameage_div bio_div">
+                <div class="input_wrap">
+                    <h1 class="input_title">Biography*:</h1>
+                    <textarea type="text" maxlength="500" class="dndbuilder_input input_bio" placeholder="Describe your character!"></textarea>
+                </div>
+                <div>
+                    <div class="input_wrap">
+                        <h1 class="input_title">Gender*:</h1>
+                        <input type="text" class="dndbuilder_input input_gender" placeholder="Enter gender">
+                    </div>
+                    <div class="input_wrap">
+                        <h1 class="input_title">Level*:</h1>
+                        <input type="text" class="dndbuilder_input input_level" placeholder="Enter level">
+                    </div>
+                </div>
+            </div>
+
+            <!--RACE/CLASS-->
+            <div class="nameage_div bio_div">
+                <div class="input_wrap">
+                    <h1 class="input_title">Race*:</h1>
+                    <select class="dndbuilder_input input_race">
+                        <option>Select</option>
+                        <option value="action">Action</option>
+                    </select>
+                </div>
+                <div class="input_wrap">
+                    <h1 class="input_title">Class*:</h1>
+                    <select class="dndbuilder_input input_class">
+                        <option>Select</option>
+                        <option value="action">Action</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--ABILITIES-->
+            <h1 class="input_title ability_score_title">Ability Scores (Must add up to 20)*:</h1>
+            <div class="nameage_div abilities_div">
+                <div class="input_wrap">
+                    <h1 class="input_title">Constitution:</h1>
+                    <input type="text" class="dndbuilder_input input_constitution">
+                </div>
+                <div class="input_wrap">
+                    <h1 class="input_title">Dexterity:</h1>
+                    <input type="text" class="dndbuilder_input input_dexterity">
+                </div>
+                <div class="input_wrap">
+                    <h1 class="input_title">Strength:</h1>
+                    <input type="text" class="dndbuilder_input input_strength">
+                </div>
+                <div class="input_wrap">
+                    <h1 class="input_title">Charisma:</h1>
+                    <input type="text" class="dndbuilder_input input_charisma">
+                </div>
+                <div class="input_wrap">
+                    <h1 class="input_title">Inteligence:</h1>
+                    <input type="text" class="dndbuilder_input input_inteligence">
+                </div>
+                <div class="input_wrap">
+                    <h1 class="input_title">Wisdom:</h1>
+                    <input type="text" class="dndbuilder_input input_wisdom">
+                </div>
+            </div>
+
+            <div class="dndbuilder_button newcharacter_submit"><button class="editCharacter_submit">Save changes </button></div>
+        </div>
+        <div class="truemarble_error">
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="../Resources/js/editCharacter.js"></script>
+ 
